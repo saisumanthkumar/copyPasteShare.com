@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/copyPasteShare.com/static/css/main.bb6486f4.chunk.css",
+    "main.js": "/copyPasteShare.com/static/js/main.6a82c2f6.chunk.js",
+    "main.js.map": "/copyPasteShare.com/static/js/main.6a82c2f6.chunk.js.map",
+    "runtime-main.js": "/copyPasteShare.com/static/js/runtime-main.eabb5ff5.js",
+    "runtime-main.js.map": "/copyPasteShare.com/static/js/runtime-main.eabb5ff5.js.map",
+    "static/js/2.bbca16d3.chunk.js": "/copyPasteShare.com/static/js/2.bbca16d3.chunk.js",
+    "static/js/2.bbca16d3.chunk.js.map": "/copyPasteShare.com/static/js/2.bbca16d3.chunk.js.map",
+    "index.html": "/copyPasteShare.com/index.html",
+    "static/css/main.bb6486f4.chunk.css.map": "/copyPasteShare.com/static/css/main.bb6486f4.chunk.css.map",
+    "static/js/2.bbca16d3.chunk.js.LICENSE.txt": "/copyPasteShare.com/static/js/2.bbca16d3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eabb5ff5.js",
+    "static/js/2.bbca16d3.chunk.js",
+    "static/css/main.bb6486f4.chunk.css",
+    "static/js/main.6a82c2f6.chunk.js"
+  ]
+}

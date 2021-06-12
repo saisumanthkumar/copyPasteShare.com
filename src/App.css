@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainbody {
+    width: 100%;
+    height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #37474F;
+    box-shadow: 0px 3px 6px rgb(31, 31, 31);
+    z-index: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .logo {
+    font-size: 22px;
+    padding: 5px 0px;
+    color: aquamarine;
+    margin: 5px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0px;
+}
+
+.option .link,
+.option .new {
+    margin: 0px 5px;
+}
+
+.option .link {
+    cursor: pointer;
+}
+
+.option .link p {
+    display: inline;
+    position: relative;
+    font-family: monospace;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.link em {
+    font-size: 22px;
+    position: relative;
+    top: 5px;
+    left: -5px;
+    color: white;
+    display: inline;
+}
+
+.option button {
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 3px 14px;
+    outline: none;
+    background-color: inherit;
+    font-size: 30px;
+    color: rgb(212, 212, 212);
+    transition: 0.1s;
+}
+
+.option button:hover {
+    color: white;
+}
+
+.body {
+    height: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    background-color: rgb(35, 46, 51);
+    padding: 70px 50px;
+    padding-right: 0px;
+    font-size: 1.5rem;
+    color: rgb(226, 226, 226);
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 3px white;
+}
+
+.body p {
+    z-index: 50;
+    position: absolute;
+    top: 70px;
+    color: rgb(219, 219, 219);
+    font-size: 24px;
+    left: 14px;
+}
+
+textarea::placeholder {
+    color: rgb(192, 192, 192);
+    font-family: monospace;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #888;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+@media only screen and (max-width:500px) {
+    .navbar .logo {
+        font-size: 18px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .navbar .option .link p {
+        display: none;
+    }
+    textarea {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .navbar .option button {
+        padding: 10px 0px;
+    }
 }

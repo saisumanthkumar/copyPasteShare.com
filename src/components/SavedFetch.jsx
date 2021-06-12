@@ -14,10 +14,11 @@ function SavedFetch({match,location}) {
 
     useEffect(() => {
     setloading(true)
-    axios.post('https://codebin951.herokuapp.com/getCode',{id:match.params.id}) 
-    .then(res => setCode(res.data.code))
-    setloading(false)
-
+    axios.post('https://localhost:3001/getCode',{id:match.params.id}) 
+    .then(res => {
+      setCode(res.data.code);
+      setloading(false);
+    })
     }, [])
 
 
@@ -26,7 +27,9 @@ function SavedFetch({match,location}) {
   };
   if(loading){
       return (
-          <h1>Loading....</h1>
+          <div className="loading">
+            <h1>Loading...</h1>
+          </div>
       )
   }
   return (
@@ -38,7 +41,7 @@ function SavedFetch({match,location}) {
           </div>
           
           <div className="option">
-          <div className="link" onClick={() => {navigator.clipboard.writeText(`http://localhost:3000/#/${match.params.id}`);alert('copied to clipboard!!!')}}>
+          <div className="link" onClick={() => {navigator.clipboard.writeText(`https://localhost:3001/#/${match.params.id}`);alert('copied to clipboard!!!')}}>
               <em><MdContentCopy /></em>
               <p>/copylink</p>
           </div>

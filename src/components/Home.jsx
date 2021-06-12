@@ -12,7 +12,7 @@ function Home() {
     if(Code.trim()){
       element.readOnly = 'true';
       axios
-        .post('https://codebin951.herokuapp.com/addCode',{code:Code})
+        .post('https://localhost:3001/addCode',{code:Code})
         .then(res => history.push(`/${res.data}`))
     }
   }

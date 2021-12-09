@@ -1,4 +1,4 @@
-## Deployed Link : <a href='https://saisumanthkumar.github.io/Global-Chat/'>Global Chat</a>
+## Deployed Link : <a href='https://saisumanthkumar.github.io/copyPasteShare.com/'>copypasteshare.com</a>
 
 ## About :
 This application📱 helps in sharing the code or text files easily,by generating the links.
